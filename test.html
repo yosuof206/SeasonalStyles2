@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <tiitle>jQuery test page</tiitle>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+    </head>
+
+
+
+    <body>
+        <h1> jQuery test page</h1>
+        <div id="myDiv">Here is my Div</div>
+
+
+        <script>
+            alert("NOT jQuery!");
+
+
+            $("document").ready(function(){
+
+                $("div#myDiv").css("background-color", "yellow");
+                $("div#myDiv").css("border", "2px solid red");
+                $("div#myDiv").append("This text got added to myDiv!");
+
+
+                $("div#myDiv").fadeOut();
+
+                //alert("This IS jQuery!");
+
+            });
+
+                //alert("NOT jQuery!");
+
+
+        </script>
+
+    </body>
+
+
+
+</html>
